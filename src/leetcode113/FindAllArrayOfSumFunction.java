@@ -13,7 +13,7 @@ public class FindAllArrayOfSumFunction {
     }
     
     private void backtrack(List<List<Integer>> result, List<Integer> tempList, TreeNode root, int sum){
-    	// If we reach to the end of one branch, do nothing
+    	// Do nothing when reached leaf
         if(root == null){
             return;
         }
